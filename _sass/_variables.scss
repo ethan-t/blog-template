@@ -1,0 +1,26 @@
+$default-color: #000;
+$default-shade: #0575e6;
+$default-tint: #222945;
+$grey-1: #979797;
+$grey-2: #e5e5e5;
+$grey-3: #f9f9f9;
+$white: #f2f2f2;
+$shadow-color: rgba(0, 0, 0, .2);
+
+$sans-font: 'PT Sans', sans-serif;
+$serif-font: 'EB Garamond', serif;
+
+$monospaced-font: Menlo, Monaco, monospace;
+$code-color: #bf616a;
+
+@mixin box-sizing($type: border-box) {
+  -webkit-box-sizing: $type;
+     -moz-box-sizing: $type;
+          box-sizing: $type;
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+     -moz-transition: $args;
+          transition: $args;
+}

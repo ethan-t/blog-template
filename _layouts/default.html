@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+  {% seo %}
+
+  <body>
+    <div class="nav">
+      <div class="nav-container">
+        <a href="{{ site.baseurl }}/">
+          <h2 class="nav-title">{{ site.title }}</h2>
+        </a>
+        <ul>
+          <li><a href="{{ '/about' | prepend: site.baseurl }}">ABOUT</a></li>
+          <li class="last"><a href="{{ '/columnists' | prepend: site.baseurl }}">COLUMNISTS</a></li>
+        </ul>
+      </div>
+    </div>
+    
+    <main>
+      {{ content }}
+    </main>
+    
+    <footer>
+      <span>
+        <a href="{{ '/feed.xml' | prepend: site.baseurl }}"<i class="fa fa-rss" aria-hidden="true"></a></i>
+        &copy; <time datetime="{{ site.time }}">{{ site.time | date: '%Y' }}</time> {{ site.author.name }}.
+        <br />
+        Made with Jekyll using a version of the <a href="https://github.com/chesterhow/tale/">Tale</a> theme modified by Ethan Thames.
+      </span>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+/* Share Bar */
+#social {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* All buttons */
+.share-buttons {
+  text-decoration: none;
+}
+
+/* Each button */
+.share-button {
+  margin: 0px;
+  margin-bottom: 10px;
+  margin-right: 3px;
+  padding: 5px 10px 5px 10px;
+}
+
+/* Facebook button */
+.fa-facebook {
+  color: #3b5998;
+}
+
+/* Twitter button */
+.fa-twitter {
+  color: #55acee;
+}
+
+/* Google-Plus button */
+.fa-google-plus {
+  color: #dd4b39;
+}
+
+/* Reddit button */
+.fa-reddit-alien {
+  color: #ff4500;
+}

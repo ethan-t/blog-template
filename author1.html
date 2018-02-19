@@ -1,0 +1,25 @@
+---
+layout: default
+title: LATEST BY ETHAN THAMES
+permalink: /columnists/ethanthames
+author: ethan_thames
+---
+{% assign author = site.data.authors[page.author] %}
+<h1 class="post-title">{{ page.title }}</h1>
+<div class="post-line"></div>
+<p>{{ author.bio }}</p>
+<div class="catalogue">
+  {% assign sorted-posts = site.posts | where: "author", "author1" %}
+  {% for post in sorted-posts %}
+    <a href="{{ post.url | prepend: site.baseurl }}" class="catalogue-item">
+      <div>
+        <span> Published by {{ author.name }} on <time datetime="{{ post.date }}" class="catalogue-time">{{ post.date | date: "%B %d, %Y" }}</time></span>
+        <h1 class="catalogue-title">{{ post.title }}</h1>
+        <div class="catalogue-line"></div>
+        <p>
+          {{ post.content | truncatewords: 50 | strip_html }}
+        </p>
+      </div>
+    </a>
+  {% endfor %}
+</div>

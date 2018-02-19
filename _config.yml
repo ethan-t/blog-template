@@ -1,0 +1,31 @@
+# Permalinks
+permalink:      /post/:title
+
+# Setup
+title:          MULTI-USER BLOG
+paginate:       5
+baseurl:        ""
+url:            "http://example.com"
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        :compressed
+
+# Build settings
+markdown:       kramdown
+
+# About
+author:
+  name:         
+  url:
+
+# Jekyll Mentions for Twitter
+jekyll-mentions: https://twitter.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-seo-tag
